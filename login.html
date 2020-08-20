@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/942b456c95.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP 4.5.2-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- START HERE -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-2">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Blogen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HOME-HEARED -->
+    <section id="home-header" class="bg-primary text-light py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1><i class="fas fa-user"></i> Blogen Admin</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHT-THICK-LINE -->
+    <section id="light-thick-line" class="py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCOUNT-LOGIN -->
+    <section id="account-login" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Account Login</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="index.html">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                                <input type="submit" value="Login" class="btn btn-primary btn-block">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- MAIN-FOOTER -->
+    <footer id="about-main-footer" class="bg-dark text-light text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead">
+                        Copyright &copy; <span id="year"></span> Hassaan Khan @5550
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- BOOTSTRAP: POPPER.MIN.JS & BOOTSTRAP.MIN.JS-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <!-- CUSTOM JS -->
+    <script>
+        // Get the current year of copyright
+        //$("#year").text(new Date().getfullyear());
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
